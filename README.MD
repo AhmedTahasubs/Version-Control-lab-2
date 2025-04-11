@@ -49,4 +49,11 @@ remotely: git push origin --delete tagName
 
 <!-- -------------------------------------- -->
 ![Cat Image](./images/cat.jpeg) or i can use URL to an image hosted somewhere else. 
-<img src="./images/cat.jpeg" width="200" alt="Description"> 
+<img src="./images/cat.jpeg" width="200" alt="Cat Image"> 
+
+<!-- -------------------------------------- -->
+I created secret file called .env and ignored it in gitignore by just adding its name
+and it wont appear in git status as untracked files
+and if i accidentally committed it i use:
+    git rm --cached .env  Untracks but keeps the file locally
+    git commit -m "Remove secrets"
